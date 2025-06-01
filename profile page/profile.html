@@ -1,37 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifyit</title>
-    <link rel="stylesheet" href="profile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="../main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="profile.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="left-section">
-            <div class="logo">
-                <img src="../images/VerifyIt_White 3.png" alt="Verifyit Logo" class="logo-image">
+    <header>
+        <nav class="navbar">
+            <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo" />
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detail</a></li>
+                <li><a href="#">Debate</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <img src="asset/profile.png" alt="Profile Icon" class="profile-icon" onclick="openImagePopup()" />
             </div>
-            <div class="mobile-menu">
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <section class="profile-card">
+            <div class="profile-info">
+                <img src="asset/profi.png" alt="User" class="profile-pic" onclick="openImagePopup()" />
+                <div class="user-name-role">
+                    <div class="username">User123</div>
+                    <div class="user-role">Premium user</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="profile-info-card">
+            <button class="edit-btn">Edit ✎</button>
+            <h2 class="section-title">Personal Information</h2>
+
+            <div class="info-grid-3col">
+                <div>
+                    <div class="info-label">First Name</div>
+                    <div class="info-value">John</div>
+                    <div class="info-label" style="margin-top: 20px;">Gender</div>
+                    <div class="info-value">Female</div>
+                </div>
+
+                <div>
+                    <div class="info-label">Last Name</div>
+                    <div class="info-value">Doe</div>
+                    <div class="info-label" style="margin-top: 20px;">Region</div>
+                    <div class="info-value">Indonesia</div>
+                </div>
+
+                <div>
+                    <div class="info-label">Email address</div>
+                    <div class="info-value">john.doe@email.com</div>
+                    <div class="info-label" style="margin-top: 20px;">Language</div>
+                    <div class="info-value">English (United States)</div>
+                </div>
             </div>
         </div>
+
+        <div class="bottom-grid">
+            <section class="history-box">
+                <div class="section-title">History <a href="#">view all</a></div>
+      
+                <div class="history-item">
+                    <div class="content-left">
+                        <strong>Submit document</strong>
+                        <div class="bottom-row">
+                            <div class="tag">Plagiarism checker</div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="history-date">10/03/2025</div>
+                    </div>
+                </div>
+           
+                <div class="history-item">
+                    <div class="content-left">
+                        <strong>Hoax Reported</strong>
+                        <div class="bottom-row">
+                            <div class="tag">Feedback</div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="history-date">09/03/2025</div>
+                    </div>
+                </div>
+      
+                <div class="history-item">
+                    <div class="content-left">
+                        <strong>“Moon landing was fake”</strong>
+                        <div class="bottom-row">
+                            <div class="tag">Debate mode</div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="history-date">09/03/2025</div>
+                        <div class="result-block">
+                            <div class="result-label">Result:</div>
+                            <div class="result-box debunked">Debunked</div>
+                        </div>
+                    </div>
+                </div>
         
-        <div class="nav-links">
-            <a href="../homepage/homepage.html" class="nav-link">Home</a>
-            <a href="../detaiForum/detailForum.html" class="nav-link">Detail</a>
-            <a href="../debate/debate.html" class="nav-link">Debate</a>
-            <a href="../detaiForum/detailForum.html" class="nav-link">Forum</a>
+                <div class="history-item">
+                    <div class="content-left">
+                        <strong>“Sugar makes children hyperactive”</strong>
+                        <div class="bottom-row">
+                            <div class="tag">Fact Checker</div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="history-date">09/03/2025</div>
+                        <div class="result-block">
+                            <div class="result-label">Result:</div>
+                            <div class="result-box factual">Factual</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="statistic-box">
+                <div class="section-title">Statistic</div>
+
+                <div class="fact-soldier-box">
+                    <div class="fact-soldier-header">
+                        <div class="fact-title">Fact Soldier</div>
+                        <div class="fact-progress">
+                            <span class="progress-value">40</span><span class="progress-total">/100</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                    <div class="levels">
+                        <span>Lv 1</span><span></span><span>Lv 2</span>
+                    </div>
+                </div>
+
+                <div class="activities-box">
+                    <div class="activities-title">Activities</div>
+
+                    <div class="activity-item">
+                        <span class="value">50</span>
+                        <span class="label">fact checking</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="value">2</span>
+                        <span class="label">debate</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="value">123</span>
+                        <span class="label">reference</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="value">12</span>
+                        <span class="label">hoax reported</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="value">5</span>
+                        <span class="label">day streak</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="value">33</span>
+                        <span class="label">xp earned</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="sponsored-box">
+                <div class="section-title">Sponsored</div>
+                <div class="sponsor-images">
+                    <img src="asset/birbai.svg" alt="Sponsor 1" />
+                    <img src="asset/gpos.svg" alt="Sponsor 2" />
+                    <img src="asset/amazon.svg" alt="Sponsor 3" />
+                </div>
+            </div>
         </div>
-        
-        <div class="auth-buttons">
-            <a href="../sign in/signIn.html" class="sign-in">Sign in</a>
-            <a href="../sign up/signUp.html" class="sign-up">Sign Up</a>
+    </main>
+
+    <div class="popup" id="imagePopup">
+        <div class="popup-content">
+            <h3>Edit Profile Picture</h3>
+            <input type="file" accept="image/*" />
+            <button onclick="closeImagePopup()">Close</button>
         </div>
-    </nav>
+    </div>
+
 </body>
+
 </html>

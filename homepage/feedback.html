@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Detail</a></li>
+        <li><a href="#">Debate</a></li>
+        <li><a href="#">Forum</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="errorAlert" class="popup-alert" style="display: none;">
+    <div class="popup-content">
+      <div class="popup-header">
+        <strong>Failed</strong>
+        <button class="close-btn" id="closeError">&times;</button>
+      </div>
+      <p id="errorMessage">Something went wrong.</p>
+    </div>
+  </div>
+
+  <main class="hero">
+    <h1>What's your <span class="highlight-green1">feedback</span>?</h1>
+    <p class="subtitle">
+      Describe any issue. Please provide details to help us address it.
+    </p>
+
+    <form id="feedbackForm" class="feedback-form">
+      <input type="text" id="issueTitle" name="issueTitle" placeholder="Issue Title" class="input-title" />
+
+      <textarea id="issueDescription" name="issueDescription" placeholder="Describe the issue (50–80 characters)"
+        class="input-description" rows="4"></textarea>
+
+      <div class="upload-section" id="uploadSection">
+        <img src="asset/camera.svg" alt="Upload" class="camera-icon" />
+        <p id="uploadText">Add photo (optional)</p>
+        <input type="file" id="fileInput" accept="image/*" style="display:none" />
+      </div>
+
+      <button type="submit" class="feedback-btn">Send</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+      <p>
+        Thank you for submitting your issue! We appreciate you taking the time to help us improve. Our team will
+        carefully review your report and get back to you if further information is needed. Thanks again for your
+        valuable feedback!
+      </p>
+    </div>
+
+  </main>
+
+  <script src="feedback.js"></script>
+
+</body>
+
+</html>
