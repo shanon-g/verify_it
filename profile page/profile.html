@@ -7,21 +7,42 @@
     <title>Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../main.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo" />
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Detail</a></li>
-                <li><a href="#">Debate</a></li>
-                <li><a href="#">Forum</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <img src="asset/profile.png" alt="Profile Icon" class="profile-icon" onclick="openImagePopup()" />
+            <div class="left-section">
+                <div class="logo">
+                    <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
+                </div>
+                <div class="mobile-menu">
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
+            
+            <div class="nav-links">
+                <a href="../homepage/homepage.html" class="nav-link">Home</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Detail</a>
+                <a href="../debate/debate.html" class="nav-link">Debate</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Forum</a>
+            </div>
+                        
+            <div class="auth-buttons">
+            <a href="../profile page/profile.html" class="profile-link">
+                <img src="asset/profile.png" alt="Profile Icon" class="profile-icon" />
+            </a>
+            <a href="../landingPage.html" class="logout-btn desktop-logout">Logout</a>
+            <div class="mobile-auth">
+                <a href="../profile page/profile.html" class="profile-text">Profile</a>
+                <a href="../landingPage.html" class="logout-text">Logout</a>
+            </div>
+</div>
         </nav>
     </header>
 
