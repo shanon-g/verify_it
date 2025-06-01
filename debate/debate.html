@@ -3,35 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifyit</title>
+    <title>Debate Mode - VerifyIt</title>
     <link rel="stylesheet" href="debate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../main.js" defer></script>
+    <script src="debate.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="left-section">
-            <div class="logo">
-                <img src="../images/VerifyIt_White 3.png" alt="Verifyit Logo" class="logo-image">
-            </div>
-            <div class="mobile-menu">
-                <button class="mobile-menu-btn">
+    <div class="sidebar" id="sidebar">
+        <div class="new-chat-btn">
+            <i class="fas fa-plus"></i>
+            <span class="new-chat-text" data-lang-key="newChat">New Chat</span>
+        </div>
+        
+        <div class="topic-group">
+            <div class="topic-header" data-lang-key="today">Today</div>
+            <div class="topic-item" data-lang-key="moonLanding">Moon landing was fake</div>
+            <div class="topic-item" data-lang-key="vaccines">Vaccines cause autism risks</div>
+            <div class="topic-item" data-lang-key="5g">5G spreads dangerous radiation...</div>
+        </div>
+        <div class="topic-group">
+            <div class="topic-header" data-lang-key="yesterday">Yesterday</div>
+            <div class="topic-item" data-lang-key="brain">Humans use only 10% brain</div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <header class="top-header">
+            <div class="header-left">
+                <button id="sidebarToggle" class="sidebar-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
+                <a href="../homepage/homepage.html" class="logo">
+                    <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
+                </a>
             </div>
-        </div>
-        
-        <div class="nav-links">
-            <a href="../homepage/homepage.html" class="nav-link">Home</a>
-            <a href="../detaiForum/detailForum.html" class="nav-link">Detail</a>
-            <a href="debate.html" class="nav-link">Debate</a>
-            <a href="../detaiForum/detailForum.html" class="nav-link">Forum</a>
-        </div>
-        
-        <div class="auth-buttons">
-            <a href="../sign in/signIn.html" class="sign-in">Sign in</a>
-            <a href="../sign up/signUp.html" class="sign-up">Sign Up</a>
-        </div>
-    </nav>
+            <div class="header-right">
+                <div class="language-dropdown">
+                    <button class="language-btn">
+                        <img src="../images/usa.png" alt="English" class="flag-icon">
+                        <span>English</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-menu" id="languageMenu">
+                        <div class="language-option active" data-lang="en">
+                            <img src="../images/usa.png" alt="English" class="flag-icon">
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="id">
+                            <img src="../images/indonesia.png" alt="Indonesia" class="flag-icon">
+                            <span>Indonesia</span>
+                        </div>
+                        <div class="language-option" data-lang="zh">
+                            <img src="../images/china.png" alt="Chinese" class="flag-icon">
+                            <span>Chinese</span>
+                        </div>
+                        <div class="language-option" data-lang="ja">
+                            <img src="../images/japan.png" alt="Japanese" class="flag-icon">
+                            <span>Japanese</span>
+                        </div>
+                        <div class="language-option" data-lang="ko">
+                            <img src="../images/korea.png" alt="Korean" class="flag-icon">
+                            <span>Korean</span>
+                        </div>
+                        <div class="language-option" data-lang="th">
+                            <img src="../images/thailand.png" alt="Thai" class="flag-icon">
+                            <span>Thai</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="../feedback.html" class="feedback-btn" data-lang-key="feedback">Feedback</a>
+            </div>
+        </header>
+
+        <main class="debate-content">
+            <h1 data-lang-key="welcomeTitle">Welcome to Debate Mode</h1>
+            <p class="subtitle" data-lang-key="welcomeSubtitle">Challenge ideas, test perspectives, and refine your arguments in real time. Let's debate!</p>
+            
+            <div class="debate-input-container">
+                <input type="text" placeholder="Let's Debate!" class="debate-input" data-lang-key="inputPlaceholder" data-lang-attr="placeholder">
+                <button class="debate-submit">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="topics-container">
+                <button class="topic-btn" data-lang-key="politics">Politics</button>
+                <button class="topic-btn" data-lang-key="technology">Technology</button>
+                <button class="topic-btn" data-lang-key="health">Health</button>
+                <button class="topic-btn" data-lang-key="lifestyle">Lifestyle</button>
+                <button class="topic-btn" data-lang-key="history">History</button>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
