@@ -1,0 +1,323 @@
+/* Container for the entire main content */
+main.input-main {
+  max-width: 1024px;
+  margin: 40px auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  box-sizing: border-box;
+}
+
+/* Heading centered */
+main.input-main > h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 0 10px;
+}
+
+/* Wrapper for left and right panels */
+.top-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+/* Left and right panels */
+.left-panel,
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 320px;
+  max-width: 480px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 24px;
+  font-size: 14px;
+}
+
+.left-panel {
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.right-panel {
+  border: 2px solid #1d9deb;
+  background: #fff;
+}
+
+/* New button */
+.btn-new {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  align-self: flex-start;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-new:hover {
+  background-color: #2ec4b6;
+  color: white;
+  border-color: #2ec4b6;
+}
+
+/* Status circle */
+.right-panel .status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.right-panel .status .circle {
+  background-color: #e63946;
+  color: white;
+  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Horizontal line */
+.right-panel hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
+
+/* Paragraph inside right panel */
+.right-panel p {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* Actions buttons */
+.right-panel .actions {
+  margin-top: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.right-panel .actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #111;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.right-panel .actions button:hover {
+  background-color: #2ec4b6;
+  color: white;
+}
+
+/* Debate button */
+.right-panel .actions .debate-btn {
+  margin-left: auto;
+  background-color: #111827;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.right-panel .actions .debate-btn:hover {
+  background-color: #2ec4b6;
+}
+
+/* Bottom container */
+.bottom-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 40px auto 0;
+  box-sizing: border-box;
+}
+
+/* Reference and Explanation panels */
+.reference-panel,
+.explanation-panel {
+  flex: 1;
+  min-width: 320px;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+.reference-panel h3,
+.explanation-panel h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Reference cards */
+.reference-card {
+  display: flex;
+  gap: 12px;
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reference-card img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.reference-text {
+  flex: 1;
+}
+
+.reference-text strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+/* Details button */
+.reference-text button {
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+.reference-text button:hover {
+  background-color: #2ec4b6;
+}
+
+/* Explanation box */
+.explanation-box {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.explanation-box strong {
+  font-weight: 700;
+}
+
+.explanation-box ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+/* Read more button */
+.explanation-box button {
+  margin-top: 12px;
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explanation-box button:hover {
+  background-color: #2ec4b6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .top-container,
+  .bottom-container {
+    flex-direction: column;
+  }
+  .left-panel,
+  .right-panel,
+  .reference-panel,
+  .explanation-panel {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main.input-main {
+    margin: 20px auto 40px;
+    padding: 0 10px;
+  }
+  main.input-main > h1 {
+    font-size: 24px;
+  }
+  .left-panel,
+  .right-panel,
+  .reference-panel,
+  .explanation-panel {
+    min-width: 100%;
+    padding: 16px;
+  }
+  .right-panel .status .circle {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .right-panel .actions button {
+    font-size: 16px;
+    padding: 6px;
+  }
+  .right-panel .actions .debate-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .reference-card img {
+    width: 60px;
+  }
+  .reference-text button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .explanation-box button {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  .btn-new {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

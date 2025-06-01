@@ -1,0 +1,267 @@
+/* Container styles */
+main.input-main {
+  max-width: 1024px;
+  margin: 40px auto 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+}
+
+main.input-main > h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.top-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Left panel: file + text with highlights */
+.left-panel {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Uploaded file block */
+.uploaded-file {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: #0c1b2a;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  user-select: none;
+  max-width: 100%;
+}
+
+.uploaded-file i {
+  font-size: 30px;
+}
+
+.file-info strong {
+  display: block;
+  font-weight: 700;
+}
+
+.file-info small {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Plagiarism text with highlights */
+.plagiarism-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.plagiarism-text mark {
+  background-color: #ffb3b3;
+  padding: 0 3px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Input footer for new button and pagination */
+.input-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btn-new {
+  background-color: white;
+  color: #111;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-new:hover {
+  background-color: #2EC4B6;
+  color: white;
+  border-color: #2EC4B6;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.page-btn {
+  background: none;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  user-select: none;
+}
+
+.page-btn:hover {
+  background-color: #2EC4B6;
+  border-color: #2EC4B6;
+  color: white;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f8fc;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+}
+
+/* Status section with circle and text */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.status.orange .circle {
+  background-color: #f4a261;
+}
+
+.circle {
+  color: white;
+  font-weight: 700;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Divider */
+.right-panel hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0;
+}
+
+/* Similar info label */
+.similar-info-label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Similar info block */
+.similar-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Logo */
+.similar-logo img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Text block */
+.similar-text {
+  flex: 1;
+}
+
+.similar-text strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.similar-text p {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* Details button */
+.btn-details {
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.btn-details:hover {
+  background-color: #2EC4B6;
+}
+
+/* Action buttons (like/dislike) */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #2EC4B6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  main.input-main {
+    max-width: 90%;
+  }
+
+  .top-container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VerifyIt - Input Page</title>
+
+  <link rel="stylesheet" href="../landingPage.css" />
+  <link rel="stylesheet" href="../navbar.css" />
+  <link rel="stylesheet" href="inputPage.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script src="../main.js" defer></script>
+  <script src="inputPage.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER from landingPage.html -->
+  <header>
+    <nav class="navbar">
+      <div class="left-section">
+        <div class="logo">
+          <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image" />
+        </div>
+        <div class="mobile-menu">
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="sign in/signIn.html" class="nav-link">Home</a>
+        <a href="sign in/signIn.html" class="nav-link">Detail</a>
+        <a href="sign in/signIn.html" class="nav-link">Debate</a>
+        <a href="sign in/signIn.html" class="nav-link">Forum</a>
+      </div>
+
+      <div class="auth-buttons">
+        <a href="sign in/signIn.html" class="sign-in">Sign in</a>
+        <a href="sign up/signUp.html" class="sign-up">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN content for input page -->
+  <main class="input-main">
+    <div class="input-box">
+      <div class="tab-header">
+        <button class="tab-button active" data-tab="fact">Fact</button>
+        <button class="tab-button" data-tab="plagiarism">Plagiarism</button>
+        <button class="tab-button" data-tab="historical">Historical</button>
+      </div>
+
+      <div class="tab-content" id="fact" style="display: block;">
+        <textarea id="input-text" placeholder="Input a statement or upload a file" maxlength="10000"></textarea>
+      </div>
+      <div class="tab-content" id="plagiarism" style="display: none;">
+        <textarea id="input-text-plagiarism" placeholder="Input a statement or upload a file" maxlength="10000"></textarea>
+      </div>
+      <div class="tab-content" id="historical" style="display: none;">
+        <textarea id="input-text-historical" placeholder="Input a statement or upload a file" maxlength="10000"></textarea>
+      </div>
+
+      <div class="input-footer">
+        <button id="scan-btn" class="btn-scan">Scan</button>
+        <label for="file-upload" class="btn-upload" title="Upload file">
+          <i class="fas fa-upload"></i>
+          <input type="file" id="file-upload" accept=".txt,.pdf,.doc,.docx" hidden />
+        </label>
+        <div class="char-counter" id="char-counter">0/10000</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER from landingPage.html -->
+  <footer>
+    <div class="footer-top">
+      <img src="../asset/VerifyIt_White.png" alt="VerifyIt Logo2" class="footer-logo" />
+
+      <div class="footer-links">
+        <div>
+          <a href="#">Home</a>
+          <a href="#">My Account</a>
+          <a href="#">Data</a>
+          <a href="#">Docs</a>
+        </div>
+        <div>
+          <a href="#">Roadmap</a>
+          <a href="#">Community Forum</a>
+          <a href="#">API</a>
+          <a href="#">Newsroom</a>
+        </div>
+        <div>
+          <a href="#">Why VerifyIt</a>
+          <a href="#">Company</a>
+          <a href="#">Careers</a>
+          <a href="#">Shop</a>
+        </div>
+      </div>
+
+      <a href="sign in/signIn.html" style="text-decoration: none;">
+        <button class="feedback-btn">Feedback</button>
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © VerifyIt, Inc. &nbsp;|&nbsp;
+        <a href="#">Privacy (Updated 02/2025)</a> &nbsp;|&nbsp;
+        <a href="#">Terms</a> &nbsp;|&nbsp;
+        <a href="#">Sitemap</a> &nbsp;|&nbsp;
+        <a href="#">Manage cookies</a> &nbsp;|&nbsp;
+        <a href="#">Do not share my personal information</a>
+      </p>
+      <div class="social-media">
+        <img src="../asset/footer_connect.png" alt="Social Media" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
