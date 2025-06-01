@@ -32,15 +32,17 @@ body {
     margin-top: 10px;
 }
 
+
 .auth-buttons .sign-in {
   color: #1a1a2e !important;
   border-radius: 8px;
+  border: 1px solid #1a1a2e; 
+  padding: 8px 16px;
 }
 
 .auth-buttons .sign-in:hover {
   background-color: #f1f1f1;
 }
-
 
 .hero {
     text-align: center;
@@ -160,15 +162,16 @@ body {
 }
 
 .feedback-btn {
-    background-color: #2EC4B6;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    transition: background 0.3s;
-    margin-top: 10px;
+  background-color: #2EC4B6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  margin-top: 10px;
+  width: auto; /* Allow it to size naturally in desktop */
 }
 
 .feedback-btn:hover {
@@ -189,10 +192,10 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 12px 20px; /* Reduced from 25px */
+        padding: 12px 20px; 
         flex-direction: column;
         align-items: stretch;
-        min-height: 60px; /* Reduced from 80px */
+        min-height: 60px; 
     }
 
     .nav-links {
@@ -202,10 +205,12 @@ body {
         flex-grow: 0;
     }
 
-    .auth-buttons {
-        display: flex;
-        gap: 10px;
-    }
+    .auth-buttons .sign-in {
+    text-align: center;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+
 }
 
 @media (max-width: 480px) {

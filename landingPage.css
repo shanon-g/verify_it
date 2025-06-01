@@ -178,7 +178,10 @@ footer {
   font-weight: 600;
   cursor: pointer;
   font-size: 16px;
+  min-width: 120px;
+  text-align: center;
   flex-shrink: 0;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -215,6 +218,18 @@ footer {
     margin: 5px 0;
   }
 
+  .auth-buttons a {
+    border: none;
+  }
+
+  .feedback-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px 0;
+    font-size: 16px;
+    margin: 10px auto;
+    display: block;
+  }
 
   .input-wrapper {
     width: 100%;
@@ -246,13 +261,6 @@ footer {
     font-size: 13px;
   }
 
-  .feedback-btn {
-    width: 100%;
-    max-width: 320px;
-    padding: 12px 0;
-    font-size: 16px;
-    margin-top: 10px;
-  }
 }
 
 @media (max-width: 480px) {

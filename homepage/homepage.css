@@ -35,6 +35,8 @@ body {
 .auth-buttons .sign-in {
   color: #1a1a2e !important;
   border-radius: 8px;
+  border: 1px solid #1a1a2e; 
+  padding: 8px 16px;
 }
 
 .auth-buttons .sign-in:hover {
@@ -53,9 +55,6 @@ body {
   font-weight: 600;
 }
 
-.auth-buttons .sign-in {
-  color: #1a1a2e !important;
-}
 
 .highlight-green1,
 .highlight-green {
@@ -182,7 +181,10 @@ footer {
   font-weight: 600;
   cursor: pointer;
   font-size: 16px;
+  min-width: 120px;
+  text-align: center;
   flex-shrink: 0;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -201,9 +203,10 @@ footer {
     flex-grow: 0;
   }
 
-  .auth-buttons {
-    display: flex;
-    gap: 10px;
+  .auth-buttons .sign-in {
+    text-align: center;
+    padding: 10px 20px;
+    justify-content: center;
   }
 
   .cta {
@@ -273,11 +276,21 @@ footer {
     align-items: center;
     gap: 10px;
   }
+  .auth-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
   .auth-buttons .sign-in {
+    border: none;
     width: 100%;
-    max-width: 100%;
-    margin: 0 5px;
+    max-width: 300px;
+    text-align: center;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn-rectangle {
@@ -298,8 +311,10 @@ footer {
 
   .feedback-btn {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
+    max-width: 320px;
+    padding: 15px 0;
+    font-size: 16px;
+    margin: 10px auto;
+    display: block;
   }
 }
