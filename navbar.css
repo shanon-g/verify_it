@@ -135,10 +135,10 @@ body {
     }
 
     .navbar {
-        padding: 25px 20px; 
+        padding: 12px 20px; 
         flex-direction: column;
         align-items: stretch;
-        min-height: 80px; 
+        min-height: 30px; 
     }
 
     .navbar.menu-active {

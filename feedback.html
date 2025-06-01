@@ -6,20 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feedback</title>
   <link rel="stylesheet" href="feedback.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar">
-      <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo" />
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Detail</a></li>
-        <li><a href="#">Debate</a></li>
-        <li><a href="#">Forum</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="left-section">
+      <div class="logo">
+        <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
+      </div>
+      <div class="mobile-menu">
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div class="nav-links">
+      <a href="homepage/homepage.html" class="nav-link">Home</a>
+      <a href="detaiForum/detailForum.html" class="nav-link">Detail</a>
+      <a href="debate/debate.html" class="nav-link">Debate</a>
+      <a href="detaiForum/detailForum.html" class="nav-link">Forum</a>
+    </div>
+          
+    <div class="auth-buttons">
+      <a href="landingPage.html" class="sign-in">Logout</a>
+    </div>
+  </nav>
+</header>
 
   <div id="errorAlert" class="popup-alert" style="display: none;">
     <div class="popup-content">

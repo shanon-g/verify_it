@@ -2,90 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VerifyIt Landing Page</title>
-    <link rel="stylesheet" href="landingpage.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VerifyIt</title>
+  <link rel="stylesheet" href="landingPage.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo" />
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Detail</a></li>
-                <li><a href="#">Debate</a></li>
-                <li><a href="#">Forum</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <a href="#" class="logout">Logout</a>
-            </div>
-        </nav>
-    </header>
-
-    <main class="hero">
-        <h1>Uncover <span class="highlight-green1">Truth</span>. Verify <span class="highlight-green">Facts</span>.</h1>
-        <p class="subtitle">
-            Your go-to platform for fact-checking, accuracy, and reliable information.<br />
-            Free to use. Easy to try. Just ask and get help with verifying claims, exploring sources, and making
-            informed decisions.
-        </p>
-
-        <div class="cta-simple">
-            <button class="btn-rectangle">Use VerifyIt</button>
+  <header>
+    <nav class="navbar">
+      <div class="left-section">
+        <div class="logo">
+          <img src="asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
         </div>
-
-        <img src="asset/Header Asset.png" alt="Hero Illustration" class="hero-image" />
-    </main>
-
-    <footer>
-        <div class="footer-top">
-            <img src="asset/VerifyIt_White.png" alt="VerifyIt Logo2" class="footer-logo">
-
-            <div class="footer-links">
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#">My Account</a>
-                    <a href="#">Data</a>
-                    <a href="#">Docs</a>
-                </div>
-                <div>
-                    <a href="#">Roadmap</a>
-                    <a href="#">Community Forum</a>
-                    <a href="#">API</a>
-                    <a href="#">Newsroom</a>
-                </div>
-                <div>
-                    <a href="#">Why VerifyIt</a>
-                    <a href="#">Company</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Shop</a>
-                </div>
-            </div>
-
-            <a href="feedback.html" style="text-decoration: none;">
-                <button class="feedback-btn">Feedback</button>
-            </a>
-            
+        <div class="mobile-menu">
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
+      
+        <div class="nav-links">
+        <a href="sign in/signIn.html" class="nav-link">Home</a>
+        <a href="sign in/signIn.html" class="nav-link">Detail</a>
+        <a href="sign in/signIn.html" class="nav-link">Debate</a>
+        <a href="sign in/signIn.html" class="nav-link">Forum</a>
+      </div>
+              
+      <div class="auth-buttons">
+        <a href="sign in/signIn.html" class="sign-in">Sign in</a>
+        <a href="sign up/signUp.html" class="sign-up">Sign Up</a>
+      </div>
+    </nav>
+  </header>
 
-        <div class="footer-bottom">
-            <p>
-                © VerifyIt, Inc. &nbsp;|&nbsp;
-                <a href="#">Privacy (Updated 02/2025)</a> &nbsp;|&nbsp;
-                <a href="#">Terms</a> &nbsp;|&nbsp;
-                <a href="#">Sitemap</a> &nbsp;|&nbsp;
-                <a href="#">Manage cookies</a> &nbsp;|&nbsp;
-                <a href="#">Do not share my personal information</a>
-            </p>
-            <div class="social-media">
-                <img src="asset/footer_connect.png" alt="Social Media" />
-            </div>
+  <main class="hero">
+    <h1>Uncover <span class="highlight-green1">Truth</span>. Verify <span class="highlight-green">Facts</span>.</h1>
+    <p class="subtitle">Your go-to platform for fact-checking, accuracy, and reliable information.<br>
+      Free to use. Easy to try. Just ask and get help with verifying claims, exploring sources, and making informed
+      decisions.</p>
+
+    <div class="cta">
+    <div class="input-wrapper">
+      <input type="email" placeholder="Enter your email" />
+      <button class="btn-green" onclick="window.location.href='sign in/signIn.html'">Sign up for VerifyIt</button>
+    </div>
+    <button class="btn-outline" onclick="window.location.href='sign in/signIn.html'">Try VerifyIt</button>
+  </div>
+
+    <img src="asset/Header Asset.png" alt="Hero Illustration" class="hero-image" />
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <img src="asset/VerifyIt_White.png" alt="VerifyIt Logo2" class="footer-logo">
+
+      <div class="footer-links">
+        <div>
+          <a href="#">Home</a>
+          <a href="#">My Account</a>
+          <a href="#">Data</a>
+          <a href="#">Docs</a>
         </div>
+        <div>
+          <a href="#">Roadmap</a>
+          <a href="#">Community Forum</a>
+          <a href="#">API</a>
+          <a href="#">Newsroom</a>
+        </div>
+        <div>
+          <a href="#">Why VerifyIt</a>
+          <a href="#">Company</a>
+          <a href="#">Careers</a>
+          <a href="#">Shop</a>
+        </div>
+      </div>
 
-    </footer>
+      <a href="sign in/signIn.html" style="text-decoration: none;">
+        <button class="feedback-btn">Feedback</button>
+      </a>
+      
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © VerifyIt, Inc. &nbsp;|&nbsp;
+        <a href="#">Privacy (Updated 02/2025)</a> &nbsp;|&nbsp;
+        <a href="#">Terms</a> &nbsp;|&nbsp;
+        <a href="#">Sitemap</a> &nbsp;|&nbsp;
+        <a href="#">Manage cookies</a> &nbsp;|&nbsp;
+        <a href="#">Do not share my personal information</a>
+      </p>
+      <div class="social-media">
+        <img src="asset/footer_connect.png" alt="Social Media" />
+      </div>
+    </div>
+
+  </footer>
 
 </body>
 
