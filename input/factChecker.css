@@ -1,3 +1,130 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px; 
+    margin-left: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: 600; 
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0cddbb;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1a1a2e; 
+    font-size: 16px; 
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; 
+    height: 100%;
+    margin-top: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-container {
+    padding: 40px;
+}
+
+.profile-text {
+    display: none;
+    color: #1a1a2e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.logout-btn {
+    color: #1a1a2e;
+    border-radius: 8px;
+    border: 1px solid #1a1a2e;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-icon:hover {
+    background-color: #f1f1f1;
+}
+
+.mobile-auth {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logout-text {
+    display: none;
+    color: #1a1a2e;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.profile-icon:hover {
+    background-color: #f1f1f1;
+}
+
+
 /* Container for the entire main content */
 main.input-main {
   max-width: 1024px;
@@ -276,6 +403,95 @@ main.input-main > h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {
+        padding: 12px 20px; 
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 30px; 
+    }
+    
+    .left-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+  
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 10px auto 5px;
+    }
+  
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-icon, 
+    .desktop-logout {
+        display: none;
+    }
+
+    .mobile-auth {
+        display: flex;
+        width: 100%;
+    }
+    
+    .profile-text {
+        display: block;
+        padding: 8px;
+        text-align: left;
+        width: 100%;
+        max-width: 300px;
+        transition: color 0.3s; 
+    }
+
+    .profile-text:hover {
+        color: #0cddbb;
+    }
+
+       .logout-text {
+        display: block;
+        color: #1a1a2e;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 8px;
+        text-align: left;
+        margin-top: 10px;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+        transition: color 0.3s;
+    }
+
+    .logout-text:hover {
+        color: #0cddbb;
+    }
+}
+
 @media (max-width: 480px) {
   main.input-main {
     margin: 20px auto 40px;
@@ -319,4 +535,6 @@ main.input-main > h1 {
     padding: 8px 16px;
     font-size: 14px;
   }
+
+  
 }

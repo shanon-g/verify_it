@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VerifyIt - Input Page</title>
-
-  <link rel="stylesheet" href="../landingPage.css" />
-  <link rel="stylesheet" href="../navbar.css" />
-  <link rel="stylesheet" href="inputPage.css" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <script src="../main.js" defer></script>
-  <script src="inputPage.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VerifyIt | Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="inputPage.css" />
+    <link rel="stylesheet" href="../landingPage.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../main.js" defer></script>
+    <script src="inputPage.js" defer></script>
 </head>
+
 
 <body>
   <!-- HEADER from landingPage.html -->
   <header>
-    <nav class="navbar">
-      <div class="left-section">
-        <div class="logo">
-          <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image" />
+        <nav class="navbar">
+        <div class="left-section">
+            <div class="logo">
+                <a href="../homepage/homepage.html">
+                    <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <div class="mobile-menu">
-          <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="nav-links">
-        <a href="sign in/signIn.html" class="nav-link">Home</a>
-        <a href="sign in/signIn.html" class="nav-link">Detail</a>
-        <a href="sign in/signIn.html" class="nav-link">Debate</a>
-        <a href="sign in/signIn.html" class="nav-link">Forum</a>
-      </div>
-
-      <div class="auth-buttons">
-        <a href="sign in/signIn.html" class="sign-in">Sign in</a>
-        <a href="sign up/signUp.html" class="sign-up">Sign Up</a>
-      </div>
-    </nav>
-  </header>
+            
+            <div class="nav-links">
+                <a href="../homepage/homepage.html" class="nav-link">Home</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Detail</a>
+                <a href="../debate/debate.html" class="nav-link">Debate</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Forum</a>
+            </div>
+                        
+            <div class="auth-buttons">
+            <a href="../profile page/profile.html" class="profile-link">
+                <img src="asset/profile.png" alt="Profile Icon" class="profile-icon" />
+            </a>
+            <a href="../landingPage.html" class="logout-btn desktop-logout">Logout</a>
+            <div class="mobile-auth">
+                <a href="../profile page/profile.html" class="profile-text">Profile</a>
+                <a href="../landingPage.html" class="logout-text">Logout</a>
+            </div>
+            </div>
+        </nav>
+    </header>
 
   <!-- MAIN content for input page -->
   <main class="input-main">
@@ -102,7 +109,7 @@
         </div>
       </div>
 
-      <a href="sign in/signIn.html" style="text-decoration: none;">
+      <a href="../feedback.html" style="text-decoration: none;">
         <button class="feedback-btn">Feedback</button>
       </a>
     </div>

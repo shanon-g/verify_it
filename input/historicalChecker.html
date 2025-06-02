@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Historical Accuracy Checker</title>
+  <title>VerifyIt | Historical Accuracy Checker</title>
   <link rel="stylesheet" href="../landingPage.css" />
   <link rel="stylesheet" href="../navbar.css" />
   <link rel="stylesheet" href="historicalChecker.css" />
@@ -13,29 +13,39 @@
 <body>
   <!-- Header copy same as inputPage.html -->
   <header>
-    <nav class="navbar">
-      <div class="left-section">
-        <div class="logo">
-          <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image" />
+        <nav class="navbar">
+        <div class="left-section">
+            <div class="logo">
+                <a href="../input/inputPage.html">
+                    <img src="../asset/VerifyIt_White 3.png" alt="VerifyIt Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <div class="mobile-menu">
-          <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-      <div class="nav-links">
-        <a href="sign in/signIn.html" class="nav-link">Home</a>
-        <a href="sign in/signIn.html" class="nav-link">Detail</a>
-        <a href="sign in/signIn.html" class="nav-link">Debate</a>
-        <a href="sign in/signIn.html" class="nav-link">Forum</a>
-      </div>
-      <div class="auth-buttons">
-        <a href="sign in/signIn.html" class="sign-in">Sign in</a>
-        <a href="sign up/signUp.html" class="sign-up">Sign Up</a>
-      </div>
-    </nav>
-  </header>
+            
+            <div class="nav-links">
+                <a href="../input/inputPage.html" class="nav-link">Home</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Detail</a>
+                <a href="../debate/debate.html" class="nav-link">Debate</a>
+                <a href="../detaiForum/detailForum.html" class="nav-link">Forum</a>
+            </div>
+                        
+            <div class="auth-buttons">
+            <a href="../profile page/profile.html" class="profile-link">
+                <img src="../asset/profile.png" alt="Profile Icon" class="profile-icon" />
+            </a>
+            <a href="../landingPage.html" class="logout-btn desktop-logout">Logout</a>
+            <div class="mobile-auth">
+                <a href="../profile page/profile.html" class="profile-text">Profile</a>
+                <a href="../landingPage.html" class="logout-text">Logout</a>
+            </div>
+            </div>
+        </nav>
+    </header>
 
   <main class="input-main" style="flex-direction: column; padding: 40px 20px;">
     <h1>Historical Accuracy Checker</h1>
@@ -116,7 +126,7 @@
           <a href="#">Shop</a>
         </div>
       </div>
-      <a href="sign in/signIn.html" style="text-decoration: none;">
+      <a href="../feedback.html" style="text-decoration: none;">
         <button class="feedback-btn">Feedback</button>
       </a>
     </div>
