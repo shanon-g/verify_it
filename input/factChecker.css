@@ -189,7 +189,7 @@ main.input-main > h1 {
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;;
   align-self: flex-start;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
